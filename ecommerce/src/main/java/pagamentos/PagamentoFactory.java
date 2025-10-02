@@ -7,7 +7,7 @@ public class PagamentoFactory {
         Class classe = null;
         Object objeto = null;
         try {
-            // Concatena o nome para formar o nome completo da classe
+            // Formar o nome completo da classe
             // Ex: "pagamentos.ecommerce.Pagamento" + "Pix" -> "pagamentos.ecommerce.PagamentoPix"
             classe = Class.forName("pagamentos.ecommerce.Pagamento" + tipoDePagamento);
             objeto = classe.newInstance();
